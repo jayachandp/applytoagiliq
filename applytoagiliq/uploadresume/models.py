@@ -6,7 +6,7 @@ from applytoagiliq import settings
 class Resume(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
-    project_url = models.URLField(max_length=150)
+    projects_url = models.URLField(max_length=150)
     code_url = models.URLField(max_length=150)
     resume = models.FileField(upload_to=settings.MEDIA_ROOT)
     
